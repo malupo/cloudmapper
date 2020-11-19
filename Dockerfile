@@ -21,7 +21,7 @@ RUN apk --no-cache --virtual build-dependencies add \
 autoconf \
 automake \
 libtool \
-python-dev \
+python3-dev \
 jq \
 g++ \
 make \
