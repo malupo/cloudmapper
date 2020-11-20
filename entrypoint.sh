@@ -33,4 +33,5 @@ pipenv run python cloudmapper.py collect --clean --account ${ACCOUNT} --region $
 # Prepare the collected data for serving
 pipenv run python cloudmapper.py prepare --account ${ACCOUNT} --region ${AWS_DEFAULT_REGION}
 # Start serving on :8000 (by default), --public means bind to 0.0.0.0
+pipenv run python cloudmapper.py report --account ${ACCOUNT}
 pipenv run python cloudmapper.py webserver --public
