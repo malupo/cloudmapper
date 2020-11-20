@@ -1,9 +1,5 @@
 {
     "accounts": [
-        {
-            "default": true
-          
-        }
     ],
     "cidrs": {}
 }
