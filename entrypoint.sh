@@ -29,8 +29,8 @@ else
 fi
 # Collect info about our AWS infrastructure, store this in /account-data, which
 # is volumed to the host.
-pipenv run python cloudmapper.py collect --account ${ACCOUNT}
+pipenv run python cloudmapper.py collect --clean --account ${ACCOUNT} --region ${AWS_DEFAULT_REGION}
 # Prepare the collected data for serving
-pipenv run python cloudmapper.py prepare --account ${ACCOUNT}
+pipenv run python cloudmapper.py prepare --account ${ACCOUNT} --region ${AWS_DEFAULT_REGION}
 # Start serving on :8000 (by default), --public means bind to 0.0.0.0
 pipenv run python cloudmapper.py webserver --public
